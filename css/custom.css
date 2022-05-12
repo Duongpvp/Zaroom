@@ -1,0 +1,408 @@
+/*  Chat CSS */
+/* Reset CSS */
+* {padding: 0; margin: 0;}
+body {font-family: sans-serif; font-size: 15px; color: #555;}
+h1, h2, h3, h4, h5, h6 {font-weight: 100;}
+input, textarea, a, button {outline: 0;}
+a {text-decoration: none}
+ul li {list-style: none;}
+.clearfix {clear: both;}
+.danger {background-color: #d9534f;}
+.success {background-color: #5cb85c}
+
+/* Menu */
+.main-menu {padding: 10px 5%; border-bottom: 1px solid #e5e5e5; width: 90%; position: fixed; background-color: #fff;}
+.main-menu h1 {color: #428bca; display: inline-block;}
+.main-menu a {display: inline-block; color: #555; font-size: 30px; margin-left: 15px;}
+
+/* Navbar */
+.main-navbar {padding: 15px; text-align: center; border-bottom: 1px solid #e5e5e5;}
+.main-navbar h1 {color: #428bca;}
+
+/* Form chat */
+.box-chat {position: fixed; bottom: 0; width: 100%; padding:0px 20px 0 0;}
+#formSendMsg input[type=text] {width: calc(90% - 20px); padding: 0px 0; font-size: 15px; color: #555; border-top-color: rgba(255, 255, 255, 0.6) ;border-right-color: rgba(255, 255, 255, 0.6) ; border-left: 0;  border-bottom: 0;}
+#formSendMsg button[type="button"] {width: calc(10% - 0px); padding: 10px 20px; }
+
+/* Show chat */
+.main-chat {height: auto; padding: 40px 40px 80px 40px; }
+.main-chat .msg-user {width: 100%; text-align: right; margin-bottom: 10px;}
+.main-chat .msg-user p {background-color: rgba(121, 141, 196, 0.6); color: #fff; display: inline-block; padding: 10px; font-size: 25px; border: 0px solid; border-radius: 20px;}
+.main-chat .msg {width: 100%; text-align: left; margin-bottom: 10px;}
+.main-chat .msg p {background-color: rgba(204, 204, 204, 0.6); color: #555; display: inline-block; padding: 10px; font-size: 25px; border: 0px solid; border-radius: 20px;}
+.main-chat .msg-user .info-msg-user,
+.main-chat .msg .info-msg {font-size: 25px;color: #666;margin-top: 10px;border-radius: 25px;}
+
+/* Show friends */
+/* .btn-list-friend{
+    font-size: 10px;
+    border:none;
+    background: border-box;
+} */
+
+/*===========================================listchat========================================*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Times New Roman', Times, serif;
+    
+    }
+body{
+    background-color: #E6E6E6;
+    }
+.body-chat {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 2%;
+    
+    }
+.btn-email{
+    width: 30%; 
+    height: 50px;
+    text-align: left;
+    font-size: 20px;
+    border-bottom: 1;
+    margin-bottom: 5px;
+}
+.mess-window{
+    border: solid;
+    border-width: 5%;
+    border-color: #BDBDBD;
+    border-radius: 10px;
+    width:65%;
+    height:650px;
+    margin-left: 1px;
+    margin-right: 0;
+    background-color: #E0F2F7;
+    
+}
+
+        .mess-header {
+            background-color:cadetblue;
+        }
+        .button {
+        display: inline-block;
+        border-radius: 4px;
+        background-color: cadetblue;
+        border: none;
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 15px;
+        padding: 10px;
+        width: 100px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+        }
+
+        .button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+        }
+
+        .button span::after {
+        content: '\2190';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        left: 20px;
+        transition: 0.5s;
+        }
+
+        .button:hover span {
+        padding-left: 25px;
+        }
+
+        .button:hover span::after {
+        opacity: 1;
+        left: -2px;
+        }
+.list-chat{
+    border: solid;
+    border-radius: 10px;
+    border-width: 2px;
+    border-top-width: 4px;
+    border-color: #BDBDBD;
+    width: 33%;
+    margin-right: 0;
+    background-color: #E0F2F7;
+    margin-left: 0.5%;
+}
+.name-group{
+    border-bottom: solid;
+    border-radius: 5px;
+    color:black;
+    text-align: center;
+    font-weight:bold;
+    font-size: 150%;
+    background-color:cadetblue;
+    margin-top: 1px;
+    line-height: 50px;
+}
+.list_friend{
+    background-color: #CED8F6;
+    border-radius: 3px;
+    margin: 1px 0;
+
+}
+.friend{
+    color: black;
+    font-size:150%;
+    font-weight:bold;
+    text-decoration: none;
+    padding:2% 60% 2% 1%;
+    text-align: center;
+    width:90%
+
+}
+.list-chat div:hover {
+    background-color: #A9D0F5;
+}
+
+.time-sent{
+    font-size: 50%;
+}
+.body-msg{
+    max-width: 50%;
+    word-break: break-word;
+    text-align: left;
+}
+.header-msg {
+    background-color:cadetblue;
+    padding: 1%;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+}
+.email-fiend{
+    font-size: 20px;
+    color: black;
+}
+.main-chat button{
+    border-width: 10%;
+    border-radius: 10px;
+    font-size: 100px;
+}
+body {
+    background-color: #cccccc;
+}
+
+.name-group{
+    font-size: 25px;
+    margin-bottom: 0px;
+    padding: 2px;
+}
+.button-b {
+        font-size: 20px;
+        border-radius: 5px;
+        box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+        outline-color: rgba(255, 255, 255, .5);
+        outline-offset: 0px;
+        text-shadow: none;
+        transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+    }
+
+    .button-b:hover {
+        border: 3px solid black;
+        box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+        outline-color: rgba(255, 255, 255, 0);
+        outline-offset: 15px;
+        border-radius: 15%;
+
+        text-shadow: 1px 1px 2px black;
+    }
+
+/* Chat CSS End */
+
+/* Make Friend CSS */
+.class-header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: cadetblue;
+    border-radius: 5px;
+}
+
+.ul-timkiem {
+    display: flex;
+
+    border-bottom: 3px solid;
+    background-color: #CED8F6;
+    border-radius: 5px;
+
+
+}
+
+.li-timkiem {
+    padding-top: 3%;
+    padding-left: 5%;
+    Font-family: time new roman;
+    font-size: 30px;
+    background-color: cadetblue;
+    width: 100%;
+
+}
+
+.to_mail {
+    border-radius: 5px;
+}
+
+
+
+
+
+.button {
+    border-radius: 5px;
+    background-color: none;
+    font-size: 25px;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+    outline: 1px solid;
+    outline-color: rgba(255, 255, 255, .5);
+    outline-offset: 0px;
+    text-shadow: none;
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.button:hover {
+    border: 1px solid;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+    outline-color: rgba(255, 255, 255, 0);
+    outline-offset: 15px;
+    text-shadow: 1px 1px 2px #427388;
+}
+
+.button-a {
+    border-radius: 5px;
+    Font-family: time new roman;
+    background-color: none;
+    font-size: 25px;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+    outline: 1px solid;
+    outline-color: rgba(255, 255, 255, .5);
+    outline-offset: 0px;
+    text-shadow: none;
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.button-a:hover {
+    border: 1px solid;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+    outline-color: rgba(255, 255, 255, 0);
+    outline-offset: 15px;
+    text-shadow: 1px 1px 2px #427388;
+}
+
+body {
+    background-color: #E6E6E6;
+    Font-family: time new roman;
+
+}
+
+.box-father {
+    margin-top: 15%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 90%;
+    padding-left: 10%;
+    background-color: none;
+}
+
+.h1 {
+    text-align: center;
+    border-radius: 5px;
+    padding-bottom: 1%;
+    border-bottom: 3px solid;
+    background-color: cadetblue;
+    font-size: 35px;
+    padding-top: 0.5%;
+    font-weight: bolder;
+
+
+}
+
+.box-con {
+    padding: 1%;
+    width: 50%;
+    border-radius: 25px;
+
+
+}
+
+.box-conn {
+    width: 50%;
+    border-radius: 5px;
+    background-color: none;
+
+
+}
+
+.box-conn1 {
+    padding: 1%;
+    width: 100%;
+    border-radius: 5px;
+    background-color: #CED8F6;
+    border: 1px solid;
+
+
+}
+
+.box-chau {
+    border-radius: 5px;
+    padding: 1%;
+    text-align: center;
+}
+
+.mail-ten {
+    font-size: 30px;
+    text-align: left;
+    padding: 0.7%;
+    text-shadow: 0 0 5px #99FFCC;
+    border-bottom: 3px solid;
+    background-color: cadetblue;
+    border-radius: 5px;
+
+
+
+
+}
+
+.themban {
+    background-color: #CED8F6;
+    border-radius: 5px;
+    padding-bottom: 0px;
+}
+
+.th-ds {
+    text-align: left;
+    padding-left: 100%;
+    font-size: 25px;
+}
+
+.td-ds {
+    text-align: left;
+    padding: 0.5%;
+    font-size: 25px;
+
+}
+
+.ds-ban {
+    font-size: 30px;
+    text-align: left;
+    padding: 0.7%;
+    text-shadow: 0 0 5px #99FFCC;
+    background-color: cadetblue;
+    border-radius: 5px;
+    border-bottom: 3px solid;
+    
+
+}
+
+a.dangxuat-a:hover,
+a.dangxuat-a:focus {
+    color: red;
+}
+/* Make Friend CSS End */
